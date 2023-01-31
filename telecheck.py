@@ -10,7 +10,7 @@ bot = ''
 
 api_id = 9411854
 api_hash = '499c76606cefdeadd4b1ece84a5a9932'
-client = TelegramClient('my_account', api_id, api_hash)
+client = TelegramClient('maccount', api_id, api_hash)
 async def main():
     # Getting information about yourself
     me = await client.get_me()

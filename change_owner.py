@@ -7,6 +7,9 @@ client = TelegramClient('my_account', api_id, api_hash)
 
 async def main():
     chat_link = input('Введите ссылку на чат:')
+    chat_link = chat_link.strip('https://').strip('t.me/')
+    if chat_link.startswith('+'):
+        chat_link = chat_link[1:]
     try:
         res = await client(functions.messages.ImportChatInviteRequest(hash=chat_link))
         chat_id = res.updates[1].channel_id

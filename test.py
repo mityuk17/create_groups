@@ -26,14 +26,6 @@ async def main():
     print(result)
     result = await client(functions.channels.TogglePreHistoryHiddenRequest(channel=chat, enabled=True))
     #result = await client(functions.channels.LeaveChannelRequest(channel=chat))
-    pwd = await client(functions.account.GetPasswordRequest())
-    print(pwd)
-    result = await client(functions.channels.EditCreatorRequest(
-        channel= chat,
-        user_id=bot,
-        password= pwd
-
-    ))
     await client.disconnect()
 
 
