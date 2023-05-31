@@ -1,7 +1,7 @@
 from telethon import TelegramClient, errors
 from telethon.tl import functions
-api_id = 9411854
-api_hash = '499c76606cefdeadd4b1ece84a5a9932'
+api_id = 
+api_hash = ''
 client = TelegramClient('my_account', api_id, api_hash)
 
 
