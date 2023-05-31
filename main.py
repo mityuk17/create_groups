@@ -9,8 +9,8 @@ password = ''
 database = ''
 bot = ''
 
-api_id = 9411854
-api_hash = '499c76606cefdeadd4b1ece84a5a9932'
+api_id = 0
+api_hash = ''
 client = TelegramClient('my_account', api_id, api_hash)
 
 
